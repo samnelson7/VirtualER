@@ -1,0 +1,12 @@
+@startuml ITAdministratorCollaboration
+hide empty description
+
+ITAdministratorDashboard --> __:VirtualERSystem__ : 1: login()
+__:VirtualERSystem__ --> ITAdministratorDashboard : 2: authenticationSuccess()
+__:VirtualERSystem__ --> __:UserManagement__ : 3: addUser() or removeUser()
+__:UserManagement__ --> __:VirtualERSystem__ : 4: updateAccountInformation()
+__:VirtualERSystem__ --> __:SystemLogs__ : 5: requestSystemLogs()
+__:SystemLogs__ --> __:VirtualERSystem__ : 6: displaySystemLogs()
+ITAdministratorDashboard --> __:VirtualERSystem__ : 7: updateSystemConfig()
+
+@enduml

@@ -1,0 +1,11 @@
+{
+    "plantuml.exportOutDir": ".",
+    "plantuml.exportSubFolder": false,
+    "plantuml.commandArgs": [],
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "editor.codeActionsOnSave": {
+        "source.sortImports": "explicit"
+    }
+}

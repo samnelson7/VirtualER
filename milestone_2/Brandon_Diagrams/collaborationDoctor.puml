@@ -1,0 +1,16 @@
+@startuml doctorCollaboration
+hide empty description
+
+DoctorDashboard --> __:VirtualERSystem__ : 1: login()
+__:VirtualERSystem__ --> DoctorDashboard : 2: authenticationSuccess()
+DoctorDashboard --> __:ERQueue__ : 3: ViewQueue()
+__:ERQueue__ --> __:VirtualERSystem__ : 4: sendQueue()
+__:VirtualERSystem__ --> DoctorDashboard : 5: displayQueue()
+DoctorDashboard --> __:VirtualERSystem__ : 6: selectPatient()
+__:VirtualERSystem__ --> __:PatientData__ : 7: retrieveData()
+__:PatientData__ --> __:VirtualERSystem__ : 8: returnData()
+__:VirtualERSystem__ --> DoctorDashboard : 9: displayPatientData()
+DoctorDashboard --> __:PatientData__ : 10-1: updateCritical()
+DoctorDashboard --> __:PatientData__ : 10-2: updateNonCritical()
+
+@enduml
