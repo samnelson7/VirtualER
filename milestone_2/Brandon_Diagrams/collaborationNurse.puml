@@ -1,0 +1,14 @@
+@startuml nurseCollaboration
+hide empty description
+
+NurseDashboard --> __:VirtualERSystem__ : 1: login()
+__:VirtualERSystem__ --> __:PatientData__ : 2: getQueue()
+__:PatientData__ --> __:VirtualERSystem__ : 3: returnQueue()
+__:VirtualERSystem__ --> NurseDashboard : 4: displayQueue()
+NurseDashboard --> __:VirtualERSystem__ : 5: selectPatient()
+__:VirtualERSystem__ --> __:PatientData__ : 6: getPatientInfo()
+__:PatientData__ --> __:VirtualERSystem__ : 7: returnInfo()
+__:VirtualERSystem__ --> NurseDashboard : 8: displayInfo()
+NurseDashboard --> __:PatientQueue__ : 9: escalateCritical()
+
+@enduml

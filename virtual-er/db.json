@@ -1,0 +1,228 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "matt"
+    },
+    {
+      "id": "2",
+      "name": "raf"
+    }
+  ],
+  "ers": [
+    {
+      "id": "1",
+      "name": "Vic Gen",
+      "capacity": 200,
+      "waitTime": 2.4
+    },
+    {
+      "id": "2",
+      "name": "Jubilee",
+      "capacity": 120,
+      "waitTime": 5
+    },
+    {
+      "id": "0",
+      "name": "MattsER",
+      "capacity": 200
+    }
+  ],
+  "patients": [
+    {
+      "name": "Brock Break",
+      "severityOfIllness": "Minor",
+      "relevantInformation": "Shattered femur, needs urgent surgery",
+      "PositionInQueue": "0 (Current Patient)",
+      "roomNumber": 115,
+      "severityRank": 4,
+      "id": "4f97",
+      "erID": "1"
+    },
+    {
+      "name": "Gail Rupture",
+      "severityOfIllness": "Minor",
+      "relevantInformation": "Severe head trauma",
+      "PositionInQueue": "1",
+      "roomNumber": 155,
+      "severityRank": 4,
+      "id": "6ea7",
+      "erID": "1"
+    },
+    {
+      "name": "Carrie Concussion",
+      "severityOfIllness": "Extreme",
+      "relevantInformation": "Can't see straight, severe dizziness and nausea",
+      "PositionInQueue": "2",
+      "roomNumber": 105,
+      "severityRank": 1,
+      "id": "8290",
+      "erID": "1"
+    },
+    {
+      "name": "Billie Hurt",
+      "severityOfIllness": "Moderate",
+      "relevantInformation": "Some lower back pain from car accident",
+      "PositionInQueue": "3",
+      "roomNumber": 145,
+      "severityRank": 3,
+      "id": "6e7a",
+      "erID": "1"
+    },
+    {
+      "name": "Johnny Bruise",
+      "severityOfIllness": "Minor",
+      "relevantInformation": "Indicated pain on the ridge of his foot",
+      "PositionInQueue": "4",
+      "roomNumber": 125,
+      "severityRank": 4,
+      "id": "810e",
+      "erID": "2"
+    },
+    {
+      "name": "Wanda Whiplash",
+      "severityOfIllness": "Minor",
+      "relevantInformation": "Some pain in lower back",
+      "PositionInQueue": "5",
+      "roomNumber": 122,
+      "severityRank": 4,
+      "id": "7d28",
+      "erID": "2"
+    },
+    {
+      "id": "f022",
+      "name": "Timmy Trauma",
+      "severityOfIllness": "Major",
+      "relevantInformation": "Fractured Femur",
+      "roomNumber": 100,
+      "severityRank": 2,
+      "erID": "2"
+    },
+    {
+      "id": "a7b6",
+      "severityOfIllness": "Extreme",
+      "relevantInformation": "Foobar",
+      "name": "Allie ACL",
+      "dob": "2024-11-13",
+      "phn": 1234122321,
+      "email": "allie@mail.com",
+      "symptoms": "Hurt Knee",
+      "medicalHistory": "ACL reconstruction surgery",
+      "erID": "1",
+      "requestDate": 1732147607888,
+      "severityRank": 1
+    },
+    {
+      "id": "bef0",
+      "severityOfIllness": "Extreme",
+      "relevantInformation": "NULL",
+      "name": "Debbie Drop Table",
+      "dob": "2000-01-01",
+      "phn": 1234567890,
+      "email": "debbie@mail.com",
+      "symptoms": "\"DROP TABLE",
+      "medicalHistory": "NULL",
+      "erID": "1",
+      "requestDate": 1732159490380,
+      "severityRank": 1
+    },
+    {
+      "id": "384e",
+      "roomNumber": 1,
+      "severityOfIllness": "Major",
+      "relevantInformation": "1",
+      "name": "Last",
+      "dob": "2024-11-05",
+      "phn": 1234123123,
+      "email": "mail@example.com",
+      "symptoms": "Foo",
+      "medicalHistory": "Bar",
+      "erID": "1",
+      "requestDate": 1732161236666,
+      "severityRank": 2
+    },
+    {
+      "id": "384e",
+      "roomNumber": 1,
+      "severityOfIllness": "Extreme",
+      "relevantInformation": "1",
+      "name": "Last",
+      "dob": "2024-11-05",
+      "phn": 1234123123,
+      "email": "mail@example.com",
+      "symptoms": "Foo",
+      "medicalHistory": "Bar",
+      "erID": "1",
+      "requestDate": 1732161236666,
+      "severityRank": 1
+    }
+  ],
+  "credentials": [
+    {
+      "id": "1",
+      "email": "admin@mail.com",
+      "pwHash": "adminadmin",
+      "name": "Admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "patient@mail.com",
+      "pwHash": "patientpatient",
+      "name": "Patient",
+      "role": "patient"
+    },
+    {
+      "id": "3",
+      "email": "doctor@mail.com",
+      "pwHash": "doctordoctor",
+      "name": "Doctor",
+      "role": "doctor",
+      "erID": "1"
+    },
+    {
+      "id": "4",
+      "email": "nurse@mail.com",
+      "pwHash": "nursenurse",
+      "name": "Nurse",
+      "role": "nurse",
+      "erID": "1"
+    },
+    {
+      "id": "5",
+      "email": "receptionist@mail.com",
+      "pwHash": "receptionist",
+      "name": "Receptionist",
+      "role": "receptionist",
+      "erID": "1"
+    },
+    {
+      "id": "6",
+      "email": "jubileedoc@mail.com",
+      "pwHash": "jubileedoc",
+      "name": "Jubilee Doctor",
+      "role": "doctor",
+      "erID": "2"
+    },
+    {
+      "id": "7",
+      "name": "MattSmith",
+      "email": "matt@mail.com",
+      "pwHash": "mattmatt",
+      "role": "admin"
+    }
+  ],
+  "er-requests": [
+    {
+      "id": "384e",
+      "name": "Last",
+      "dob": "2024-11-05",
+      "phn": 1234123123,
+      "email": "mail@example.com",
+      "symptoms": "Foo",
+      "medicalHistory": "Bar",
+      "erID": "1",
+      "requestDate": 1732161236666
+    }
+  ]
+}

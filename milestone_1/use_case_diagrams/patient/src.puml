@@ -1,0 +1,20 @@
+@startuml plantuml
+left to right direction
+:Patient: as p
+rectangle "Virtual ER" {
+  usecase "Login" as login
+  (Register) as reg
+  usecase "Logout" as logout
+  (View ER Conditions) as view_er
+  (Do Virtual Triage) as triage
+  (Get Recommendations) as get_rec
+  (Enter Patient Queue) as queue
+}
+p --> login
+p --> logout
+p --> view_er
+p --> triage
+login <.. reg : <<extend>>
+triage <.. get_rec: <<extend>>
+triage <.. queue : <<extend>>
+@enduml
